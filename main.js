@@ -36,7 +36,7 @@ window.onload = function() {
 
   var tracker = new tracking.ColorTracker(['userColor'])
 
-  tracking.track('#video', tracker, { camera: true })
+  tracking.track('#video', tracker, { camera: true, audio: false })
 
 
   tracker.on('track', function(event) {
